@@ -1,0 +1,17 @@
+{
+  "name": "meta-permisos",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port=8080 --host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
