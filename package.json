@@ -1,17 +1,19 @@
 {
   "name": "meta-permisos",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.html",
+  "type": "module",
+  "description": "Permisos de Privacidad para Meta",
   "scripts": {
     "build": "vite build",
-    "dev": "vite --port=8080 --host"
+    "dev": "vite --port=8080 --host --open"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "type": "commonjs",
+  "contributors": [
+    "santiago.garabaya@gmail.com"
+  ],
   "devDependencies": {
-    "vite": "^7.1.12"
+    "vite": "^7.2.2"
   }
 }

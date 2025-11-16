@@ -1,0 +1,102 @@
+@import "card.css";
+@import "toggle.css";
+@import "options.css";
+@import "switch.css";
+
+@font-face {
+    font-display: swap;
+    font-family: Optimistic Text;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/6YirsaXqsap.woff2) format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Optimistic Text;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/WF8VhTuShVE.woff2) format("woff2");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    font-family: 'Optimistic Text';
+}
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    column-count: 2;
+
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.left-panel {
+    border-right: 1px solid #ddd;
+    width: 25%;
+    min-width: 20rem;
+    height: 100%;
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+}
+
+.right-panel {
+    width: 70%;
+    min-width: 40rem;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.left-panel h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-detail {
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+
+.left-panel hr {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #eee;
+}
+
+.left-panel .section-list {
+    margin: 0;
+    padding: 0;
+}
+
+.left-panel .section-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 16px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.left-panel .section-list li:hover {
+    background-color: #eee;
+}
