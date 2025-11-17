@@ -27,33 +27,266 @@
             <h3>Ajustes de privacidad</h3>
             <ul class="section-list">
                 <li>
-                    <span>Ajustes compartidos</span>
+                    <span>Identidad Básica</span>
                 </li>
                 <li>
-                    <span>Facebook</span>
+                    <span>Uso y Actividad del Usuario</span>
                 </li>
                 <li>
-                    <span>Instagram</span>
+                    <span>Contacto y Comunicacion</span>
                 </li>
                 <li>
-                    <span>Threads</span>
+                    <span>Datos Tecnicos del Dispositivo</span>
                 </li>
             </ul>
         </div>
         <div class="right-panel">
             <h1>Ajustes de privacidad</h1>
 
-            <span>
-                Gestiona la información de tu perfil y usa la misma información en Facebook, Instagram y Threads.
-                Añade más perfiles agregando tus cuentas.
-            </span>
+            <p>Gestiona la información de tu perfil y usa la misma información en Facebook, Instagram y Threads.</p>
+            <p>A traves de este sitio, puedes controlar que informacion se comparte con otros usuarios y con Meta.</p>
 
-            <br />
-            <br />
+            <hr />
+
+            <details class="card" open>
+                <summary>Ajustes de Identidad Básica</summary>
+                <main>
+                    <div>
+                        <h4>Fecha de nacimiento</h4>
+
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="fecha-nacimiento-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="fecha-nacimiento-usuarios" value="1" id="fecha-nacimiento-1"
+                                checked="checked" />
+                            <label for="fecha-nacimiento-1">Nadie</label>
+
+                            <input type="radio" name="fecha-nacimiento-usuarios" value="2" id="fecha-nacimiento-2" />
+                            <label for="fecha-nacimiento-2">Solo amigos</label>
+
+                            <input type="radio" name="fecha-nacimiento-usuarios" value="3" id="fecha-nacimiento-3" />
+                            <label for="fecha-nacimiento-3">Todos</label>
+                        </div>
+
+                        <hr />
+                    </div>
+
+                    <div>
+                        <h4>Número de Teléfono</h4>
+
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="numero-telefono-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="numero-telefono-usuarios" value="1" id="numero-telefono-1"
+                                checked="checked" />
+                            <label for="numero-telefono-1">Nadie</label>
+
+                            <input type="radio" name="numero-telefono-usuarios" value="2" id="numero-telefono-2" />
+                            <label for="numero-telefono-2">Solo amigos</label>
+
+                            <input type="radio" name="numero-telefono-usuarios" value="3" id="numero-telefono-3" />
+                            <label for="numero-telefono-3">Todos</label>
+                        </div>
+
+                        <hr />
+                    </div>
+                    <div>
+                        <h4>Correo Electrónico</h4>
+
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="email-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="email-usuarios" value="1" id="email-1" checked="checked" />
+                            <label for="email-1">Nadie</label>
+
+                            <input type="radio" name="email-usuarios" value="2" id="email-2" />
+                            <label for="email-2">Solo amigos</label>
+
+                            <input type="radio" name="email-usuarios" value="3" id="email-3" />
+                            <label for="email-3">Todos</label>
+                        </div>
+
+                        <hr />
+                    </div>
+
+                    <div>
+                        <h4 class="vertical-center">Nombre en Facebook <img src="images/facebook.svg" /></h4>
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="nombre-facebook-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="nombre-facebook-usuarios" value="1" id="nombre-facebook-1"
+                                checked="checked" />
+                            <label for="nombre-facebook-1">Nadie</label>
+
+                            <input type="radio" name="nombre-facebook-usuarios" value="2" id="nombre-facebook-2" />
+                            <label for="nombre-facebook-2">Solo amigos</label>
+
+                            <input type="radio" name="nombre-facebook-usuarios" value="3" id="nombre-facebook-3" />
+                            <label for="nombre-facebook-3">Todos</label>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div>
+                        <h4 class="vertical-center">Nombre en Instagram <img src="images/instagram.svg" /></h4>
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="nombre-instagram-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="nombre-instagram-usuarios" value="1" id="nombre-instagram-1"
+                                checked="checked" />
+                            <label for="nombre-instagram-1">Nadie</label>
+
+                            <input type="radio" name="nombre-instagram-usuarios" value="2" id="nombre-instagram-2" />
+                            <label for="nombre-instagram-2">Solo amigos</label>
+
+                            <input type="radio" name="nombre-instagram-usuarios" value="3" id="nombre-instagram-3" />
+                            <label for="nombre-instagram-3">Todos</label>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div>
+                        <h4 class="vertical-center">Foto de Perfil en Facebook <img src="images/facebook.svg" /></h4>
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="foto-perfil-facebook-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="foto-perfil-facebook-usuarios" value="1"
+                                id="foto-perfil-facebook-1" checked="checked" />
+                            <label for="foto-perfil-facebook-1">Nadie</label>
+
+                            <input type="radio" name="foto-perfil-facebook-usuarios" value="2"
+                                id="foto-perfil-facebook-2" />
+                            <label for="foto-perfil-facebook-2">Solo amigos</label>
+
+                            <input type="radio" name="foto-perfil-facebook-usuarios" value="3"
+                                id="foto-perfil-facebook-3" />
+                            <label for="foto-perfil-facebook-3">Todos</label>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div>
+                        <h4 class="vertical-center">Foto de Perfil en Instagram <img src="images/instagram.svg" /></h4>
+                        <p class="vertical-center">
+                            <label class="booleano">
+                                <input type="checkbox" name="foto-perfil-instagram-meta">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Permitir a Meta usar este dato para personalización</span>
+                            &nbsp;
+                            <abbr title="Meta usa esta información para personalizar tu experiencia">
+                                <i data-feather="help-circle"></i>
+                            </abbr>
+                        </p>
+
+                        <p>Compartir esta información con:</p>
+                        <div class="multi-opcion">
+                            <input type="radio" name="foto-perfil-instagram-usuarios" value="1"
+                                id="foto-perfil-instagram-1" checked="checked" />
+                            <label for="foto-perfil-instagram-1">Nadie</label>
+
+                            <input type="radio" name="foto-perfil-instagram-usuarios" value="2"
+                                id="foto-perfil-instagram-2" />
+                            <label for="foto-perfil-instagram-2">Solo amigos</label>
+
+                            <input type="radio" name="foto-perfil-instagram-usuarios" value="3"
+                                id="foto-perfil-instagram-3" />
+                            <label for="foto-perfil-instagram-3">Todos</label>
+                        </div>
+                    </div>
+                </main>
+            </details>
+
+            <details class="card">
+                <summary>Datos de Uso y Actividad del Usuario</summary>
+                <main>
+                </main>
+            </details>
+
+            <details class="card">
+                <summary>Datos de Contacto y Comunicacion</summary>
+                <main>
+                </main>
+            </details>
+
+            <details class="card">
+                <summary>Datos Tecnicos del Dispositivo</summary>
+                <main>
+                </main>
+            </details>
+
         </div>
     </div>
 
     <script type="module" src="src/profile.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace();</script>
 </body>
 
 </html>
