@@ -21,6 +21,7 @@ body {
     height: 100vh;
     background-color: #eee;
     font-family: 'Optimistic Text';
+    overflow: hidden;
 }
 
 .container {
@@ -53,6 +54,7 @@ body {
     height: 100%;
     background-color: white;
     padding: 2rem;
+    overflow: auto;
 }
 
 .logo {
@@ -94,4 +96,136 @@ body {
 
 .left-panel .section-list li:hover {
     background-color: #eee;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-center>* {
+    display: inline-block;
+}
+
+.booleano {
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-right: .8rem;
+}
+
+.booleano .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: 0.4s;
+    border-radius: 32px;
+}
+
+.booleano .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: 0.4s;
+}
+
+.booleano input:checked+.slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.booleano input:focus+.slider {
+    box-shadow: 0 0 1px #007bff;
+}
+
+.booleano input:checked+.slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+
+.multi-opcion {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.multi-opcion * {
+    user-select: none;
+    cursor: pointer;
+}
+
+.multi-opcion input {
+    display: none;
+}
+
+.multi-opcion label {
+    display: inline-block;
+    padding: .5rem 1rem .5rem 1rem;
+    border: 1px solid #ddd;
+    margin: 0;
+}
+
+.multi-opcion label:first-of-type {
+    border-radius: 32px 0 0 32px;
+    border-right: none;
+}
+
+.multi-opcion label:last-of-type {
+    border-radius: 0 32px 32px 0;
+    border-left: none;
+}
+
+.multi-opcion input:checked+label {
+    border: none;
+    background-color: #0064E0;
+    color: #eee;
+}
+
+hr {
+    border: 1px solid #eee;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    margin-top: 1rem;
+}
+
+.card>summary {
+    font-size: 1.3rem;
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card:open>summary {
+    border-bottom: 1px solid #ddd;
+}
+
+.card>main {
+    padding: 1rem;
+}
+
+.feather {
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
 }
