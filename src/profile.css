@@ -229,3 +229,60 @@ hr {
     stroke-linejoin: round;
     fill: none;
 }
+
+abbr {
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+
+    display: none;
+
+    background-color: #ddd;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    padding: 1rem;
+    overflow: auto;
+}
+
+table {
+    margin-top: 2rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+table td {
+    margin: 0;
+    padding: 1rem;
+}
+
+table th {
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.button {
+    display: block;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 32px;
+    width: 5rem;
+    margin: 1rem;
+
+    background-color: #fff;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.shown {
+    display: block;
+}
